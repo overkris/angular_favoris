@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <!-- Init des collaps -->
+            <uib-accordion close-others="oneAtATime">
+                <!-- Repeat Favoris -->
+                <div ng-repeat="categorie in itemliste.itemListe"
+                     uib-accordion-group
+                     class="panel-default categorie-liste"
+                     heading="{{ categorie.nameCategorie }}"
+                     is-open="$first"
+                >
+
+                    <!-- Repeat des Items -->
+                    <div ng-repeat="item in categorie.items"
+                         md-ink-ripple="#FF0000"
+                         md-whiteframe="10"
+                         ng-click="itemliste.openSite(item)"
+                         class="md-raised md-primary col-sm-2 fiche-site"
+                         style="{{ itemliste.setCssBackground(item) }}"
+                    >
+                        <div class="head-fiche-site">{{ item.nameSite }}</div>
+                        <div class="body-fiche-site">{{ item.description }}</div>
+                    </div>
+                </div>
+            </uib-accordion>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.fiche-site {
+    border: 1px solid gray;
+    height: 90px;
+    padding: 0px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+
+.fiche-site .head-fiche-site {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-align: center;
+}
+
+.fiche-site .body-fiche-site {
+    padding: 5px;
+    font-style: italic;
+}
+
+.panel-group div.categorie-liste {
+    margin-bottom: 20px;
+}

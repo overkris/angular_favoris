@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <!-- Vendors -->
+        <!-- Vendors CSS -->
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="bower_components/bootstrap/dist/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <link href="bower_components/angular-bootstrap/ui-bootstrap-csp.css" rel="stylesheet" type="text/css"/>
+        <link href="bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css"/>
+
+
+        <!-- Vendors JS -->
+        <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="bower_components/angular-aria/angular-aria.js"></script>
+        <script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+        <script type="text/javascript" src="bower_components/angular-material/angular-material.js"></script>
+        <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+        <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+        <!-- Init de l'application -->
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Init de l'application -->
+        <script type="text/javascript" src="src/conf.js"></script>
+        <script type="text/javascript" src="src/app.js"></script>
+        <script type="text/javascript" src="src/routing.js"></script>
+
+        <!-- Controllers -->
+        <script type="text/javascript" src="src/controllers/itemController.js"></script>
+
+        <!-- Services -->
+        <script type="text/javascript" src="src/services/itemProvider.js"></script>
+    </head>
+    <body ng-app="collectify">
+        <div class="container" ng-cloak>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>{{ title }}</h1>
+                </div>
+            </div>
+        </div>
+        <div ng-view></div>
+    </body>
+</html>
