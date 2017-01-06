@@ -14,7 +14,10 @@
                     <!-- Repeat des Items -->
                     <div ng-repeat="item in categorie.items"
                          md-ink-ripple="#FF0000"
-                         md-whiteframe="10"
+                         ng-init="whiteframe = 5"
+                         md-whiteframe="{{whiteframe}}"
+                         ng-mouseenter="whiteframe = 10"
+                         ng-mouseleave="whiteframe = 5"
                          ng-click="itemliste.openSite(item)"
                          class="md-raised md-primary col-sm-2 fiche-site"
                          style="{{ itemliste.setCssBackground(item) }}"
